@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naresh || Portfolio</title>
+    
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets/Naresh Kumar.png" type="image/x-icon"> 
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#df6b0c] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#df6b0c]"></div>
+</div>
+  
+
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+<div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+  <!-- Hero Content -->
+  <div class="container text-center position-relative" style="z-index: 1">
+    <h1 class="display-4 fw-bold">
+      <span class="text-white me-2">Hi, I'm</span>
+      
+        <span class="display-3 fw-bold text-uppercase mb-3" style="letter-spacing: 2px;" id="hero-name">Naresh Kumar</span>
+       
+    </h1>
+    <p class="lead text-light mt-3">
+      An aspiring Full Stack Developer passionate about building sleek web
+      experiences.
+    </p>
+   
+  </div>
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div
+    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4"
+  >
+    <!-- Profile Image -->
+    <div
+      class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition duration-500"
+      id="about-img"
+    >
+      <img
+        src="./assets/mypic.jpeg"
+        alt="Naresh kumar"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        A
+        Full Stack Developer building creative and scalable web
+        applications.
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+              I'm constantly exploring new technologies and building projects that challenge me and sharpen my skills. Whether it's a startup MVP, a dashboard system, or a fully responsive e-commerce platform I'm ready to make it happen.
+
+      </p>
+
+    
+
+      <!-- Social Icons -->
+      <ul class="socio-icons">
+        <li class="icon-content">
+          <a
+            href="https://www.instagram.com/_naresh.dev_/?utm_source=qr&r=nametag"
+            aria-label="Instagram"
+            data-social="instagram"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">Instagram</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://www.linkedin.com/in/nareshkumar-s"
+            aria-label="LinkedIn"
+            data-social="linkedin"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="480" height="480" viewBox="0 0 48 48">
+              <path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">LinkedIn</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="mailto:nareshk.s.dev@gmail.com"
+            aria-label="Email"
+            data-social="email"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z"></path><path fill="#f5f5f5" d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z"></path><path fill="#e84f4b" d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">Gmail</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://github.com/Naresh1642-wd"
+            aria-label="GitHub"
+            data-social="github"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <circle cx="28" cy="28" r="18" fill="#9fa8da"></circle><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M35.054,38.836	C31.97,41.137,28.144,42.5,24,42.5C13.783,42.5,5.5,34.217,5.5,24c0-2.917,0.675-5.676,1.878-8.13"></path><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13.869,8.518	C16.779,6.61,20.26,5.5,24,5.5c10.217,0,18.5,8.283,18.5,18.5c0,2.941-0.686,5.721-1.907,8.19"></path><path fill="#18193f" d="M34,23c0-1.574-0.576-3.038-1.558-4.275c0.442-1.368,0.93-3.771-0.242-5.648	c-2.251,0-3.73,1.545-4.436,2.514C26.602,15.213,25.333,15,24,15s-2.602,0.213-3.764,0.591c-0.706-0.969-2.184-2.514-4.436-2.514	c-1.328,2.126-0.526,4.45-0.073,5.43C14.638,19.788,14,21.334,14,23c0,3.78,3.281,6.94,7.686,7.776	c-1.309,0.673-2.287,1.896-2.587,3.38h-1.315c-1.297,0-1.801-0.526-2.502-1.415c-0.692-0.889-1.437-1.488-2.331-1.736	c-0.482-0.051-0.806,0.316-0.386,0.641c1.419,0.966,1.516,2.548,2.085,3.583C15.168,36.161,16.229,37,17.429,37H19v5.942h10v-7.806	c0-1.908-1.098-3.544-2.686-4.36C30.719,29.94,34,26.78,34,23z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">GitHub</div>
+        </li>
+      </ul>
+
+      <!-- Download Resume Button -->
+      <div class="flex align-items-center justify-content-center mt-8">
+        <a
+          href="./assets/Naresh-Kumar_Resume.pdf"
+          download
+        ><button class="btn btn-primary">Resume</button>
+         
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- JOURNEY SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#df6b0c]">My Journey</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#df6b0c]"></div>
+
+           <!-- Timeline Card 3 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#df6b0c] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#df6b0c] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#df6b0c]">B.E – Computer Science and Engineering </h3>
+            <span class="text-sm text-gray-400">Sri Krishna college of Technology(2021-2024)</span>
+            <p class="mt-2 text-gray-300">During my engineering studies, I gained strong expertise in core computer science subjects and hands-on experience with full-stack development. I also explored Cloud Computing, AI/ML, and Blockchain technologies through academic and personal projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 4 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#df6b0c] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#df6b0c] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#df6b0c]">Diploma - Computer Technology </h3>
+            <span class="text-sm text-gray-400">Christ the king polytechnic college (2018-2021)</span>
+            <p class="mt-2 text-gray-300">I have gained a strong foundation in core computer science concepts during my diploma program, including fundamental principles of programming, data structures, algorithms, and computer systems.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+    <!-- FRONTEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-center justify-center" >
+     
+
+      <!-- Tech Grid -->
+      <div class="w-full md:w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-6 reveal-section">
+        <!-- Tech Icons Here -->
+        <div class="flex items-center gap-2 "><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6"><span class="text-lg">Javascript</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6 h-6"><span class="text-lg">React</span></div>
+        
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-6 h-6"/>
+         <span class="text-lg">Tailwind CSS</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="w-6 h-6"/><span class="text-lg">HTML</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6" />
+         <span class="text-lg">CSS</span></div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-wave-square"></i>
+          <span class="text-lg">GSAP</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./assets/framer-logo.png"
+         class="w-6 h-6" id="framer"><span class="text-lg">Framer Motion</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-6 h-6"><span class="text-lg">C</span></div>
+        
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-6 h-6"><span class="text-lg">Bootstrap</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-6 h-6"><span class="text-lg">Java</span></div>
+         <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6"><span class="text-lg">Node.js</span></div>
+        
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-6 h-6 bg-white rounded p-0.5"><span class="text-lg">Express.js</span></div>
+       
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" class="w-6 h-6"><span class="text-lg">Nodemon</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg" class="w-6 h-6"><span class="text-lg">Mongoose</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6"><span class="text-lg">MongoDB</span></div>
+        
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6"><span class="text-lg">Git</span></div>
+       
+        <div class="flex items-center gap-2"><img src="./assets/github-logo.png" class="w-6 h-6"><span class="text-lg">GitHub</span></div>
+        
+       
+      </div>
+    </div>
+
+   
+    
+
+    
+
+  
+    
+  </div>
+</section>
+
+<!-- GITHUB ACTIVITY SECTION -->
+<section id="github-activity" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">GitHub Activity</h2>
+      <p class="text-gray-400 text-lg">My latest contributions and coding activity.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <!-- GitHub Stats Cards -->
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#df6b0c] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#df6b0c] mb-2" id="githubRepos">-</div>
+        <div class="text-gray-400">Public Repositories</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#df6b0c] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#df6b0c] mb-2" id="githubStars">-</div>
+        <div class="text-gray-400">Total Stars</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#df6b0c] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#df6b0c] mb-2" id="githubFollowers">-</div>
+        <div class="text-gray-400">Followers</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#df6b0c] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#df6b0c] mb-2" id="githubCommits">-</div>
+        <div class="text-gray-400">Recent Commits</div>
+      </div>
+    </div>
+
+    <!-- GitHub Activity Feed -->
+    <div class="bg-[#111] rounded-2xl p-6 border border-gray-800">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-xl font-semibold text-[#df6b0c]">Recent Activity</h3>
+        <a href="https://github.com/abhijeetBhale" target="_blank" class="text-[#df6b0c] hover:text-[#17b890] transition-colors">
+          View Profile <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+      </div>
+      
+      <div id="githubActivity" class="space-y-4">
+        <!-- Activity items will be loaded here -->
+        <div class="flex items-center justify-center py-8">
+          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-[#df6b0c]"></div>
+          <span class="ml-3 text-gray-400">Loading activity...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Languages -->
+    <div class="mt-12">
+      <h3 class="text-xl font-semibold text-[#df6b0c] mb-6 text-center">Most Used Languages</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-[#df6b0c]" id="githubLanguages">
+        <!-- Language cards will be loaded here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- UPCOMING PROJECTS SECTION -->
+<section id="upcoming-projects" class="relative bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Upcoming Projects</h2>
+   
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!-- CARD: Social Media App -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6 d-flex flex-col">
+      <h3 class="text-xl font-semibold mb-2">E-commerce Web Application</h3>
+      <p class="text-gray-700 text-lg mb-4">A full-featured e-commerce platform built with the MERN stack and Next.js. Includes product listings, cart management, user authentication, payment integration, order tracking, and admin dashboard for inventory control.</p>
+      <button class="inline-block  px-3 py-1 rounded text-xs font-semibold btn btn-danger align-self-center">Coming Soon</button>
+    </div>
+
+    <!-- CARD: School Management Dashboard -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6 d-flex flex-col">
+      <h3 class="text-xl font-semibold mb-2">Blog Application</h3>
+      <p class="text-gray-700 text-lg mb-4">A dynamic blogging platform developed using the MERN stack and Next.js. Features include user authentication, rich-text editor, category filtering, comment system, like & save functionality, and responsive UI.</p>
+      <button class="inline-block  px-3 py-1 rounded text-xs font-semibold btn btn-danger align-self-center">Coming Soon</button>
+    </div>
+
+    <!-- CARD: Rental Web Application -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6 d-flex flex-col">
+      <h3 class="text-xl font-semibold mb-2">Social Media App</h3>
+      <p class="text-gray-700 text-lg mb-4">A modern social media platform featuring user profiles, posts, real-time chat, notifications, and interactive feeds built with the MERN stack and Next.js.</p>
+      <button class="inline-block  px-3 py-1 rounded text-xs font-semibold btn btn-danger align-self-center">Coming Soon</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section id="contact-form" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Lets Connect</h2>
+      
+    </div>
+
+    <div class="grid  gap-10">
+      <!-- Contact Info -->
+      
+
+      <!-- Contact Form -->
+      <div class="bg-white text-black rounded-2xl p-8 shadow-xl w-85">
+        <form id="contactForm" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="block text-sm font-medium mb-2">First Name <span style="color: red">*</span></label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#df6b0c] focus:border-transparent transition-all"
+                placeholder=""
+              >
+            </div>
+            <div>
+              <label for="lastName" class="block text-sm font-medium mb-2">Last Name <span style="color: red">*</span></label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#df6b0c] focus:border-transparent transition-all"
+                placeholder=""
+              >
+            </div>
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium mb-2">Email <span style="color: red">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#df6b0c] focus:border-transparent transition-all"
+              placeholder=""
+            >
+          </div>
+          
+          
+          
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">Message <span style="color: red">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#df6b0c] focus:border-transparent transition-all resize-none"
+              placeholder=""
+            ></textarea>
+          </div>
+          
+          <button 
+            type="submit" 
+            id="submitBtn"
+            class="w-full bg-[#df6b0c] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#df6b0c] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#df6b0c] focus:ring-offset-2"
+          >
+            <span id="submitText">Send Message</span>
+            <span id="submitLoading" class="hidden">
+              <i class="fas fa-spinner fa-spin mr-2"></i>Sending...
+            </span>
+          </button>
+        </form>
+        
+        <!-- Success/Error Messages -->
+        <div id="formMessage" class="mt-4 p-4 rounded-lg hidden">
+          <p id="messageText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="bg-black text-white py-3 px-5 flex items-center justify-center">
+  <div class="w-[90%] max-w-4xl text-center flex flex-col items-center gap-2">
+   
+
+   
+    <a href="mailto:nareshk.s.dev@gmail.com" class="hover:text-gray-400 transition text-[#df6b0c]">
+      <h2 class="md:text-4xl font-bold mb-2 ">nareshk.s.dev@gmail.com</h2>
+    </a>
+    <h2 class="md:text-4xl font-bold mb-2 hover:text-gray-400 transition text-[#df6b0c] ">Naresh Kumar 2025 &copy;</h2>
+
+  </div>  
+</section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    
+    <div class="wrapper">
+      <button class="back2top-button" id="backToTop">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+        </svg>
+        <span class="button-label">Back to Top</span>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
